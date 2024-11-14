@@ -1,0 +1,148 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #1b1b2f;
+    color: #e1e1e6;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2d2d44;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.search-sort {
+    display: flex;
+    align-items: center;
+}
+
+.search-sort input{
+    width: 300px;
+    font-family: "Poppins";
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+.search-sort select {
+    width: 200px;
+    font-family: "Poppins";
+    margin-left: 10px;
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.movie-item {
+    background-color: #2d2d44;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+}
+
+.movie-item img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-item h3, .movie-item p {
+    margin: 10px 0;
+}
+
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2em;
+    color: #f1f1f1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #2d2d44;
+    padding: 20px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 8px;
+    max-height: 80%;
+    align-items: left;
+    overflow-y: auto;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+body.modal-open {
+    overflow: hidden;
+}
+.add-to-watchlist, .remove-from-watchlist {
+    font-family: "Poppins";
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-watchlist {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.add-to-watchlist:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.remove-from-watchlist {
+    background-color: #dc3545;
+    color: #ffffff;
+    display: none;
+}
+
+.remove-from-watchlist:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}

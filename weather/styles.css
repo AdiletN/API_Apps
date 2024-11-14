@@ -1,0 +1,181 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: url(images/background.jpg!sw800) center center fixed;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.weather__curfore {
+    display: none;
+}
+.app__title {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.app__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.app__search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    background: #e6f3ff;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#searchInput {
+    flex-grow: 1;
+    padding: 10px 15px;
+    width: 500px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 30px 0 0 30px;
+    background-color: transparent;
+}
+#searchBtn, #currentWeatherBtn {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    color: #1cadf5;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+#searchBtn:hover, #currentWeatherBtn:hover {
+    background-color: #e0f2ff;
+}
+.app__unitToggle {
+    display: flex;
+    align-items: center;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    font-family: "Poppins";
+    font-size: 28px;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: white;
+}
+.checkbox-container input[type="checkbox"] {
+    display: none;
+}
+.checkmark {
+    width: 50px;
+    height: 24px;
+    background-color: #ccc;
+    border-radius: 30px;
+    position: relative;
+    transition: background-color 0.3s;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.checkmark::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+input:checked + .checkmark {
+    background-color: #1cadf5;
+}
+input:checked + .checkmark::before {
+    transform: translateX(26px);
+}
+.app__weathers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+#currentWeather{
+    width: 100%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+#forecastDisplay {
+    display: grid;
+    max-width: 1000px;
+    width: 800px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+#forecastDisplay > *:nth-child(5) {
+    grid-column: span 4;
+    justify-self: center;
+}
+.forecast-item {
+    width: 100%;
+    max-width: 150px;
+    padding: 16px;
+    text-align: center;
+    background-color: rgba(12, 175, 211, 0.571);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.suggestions {
+    position: absolute;
+    width: 300px;
+    margin-top: 265px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+}
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+#currentWeather, #forecastDisplay {
+    display: none;
+}
+.suggestion-item:hover {
+    background-color: #e0f2ff;
+}

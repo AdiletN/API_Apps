@@ -1,23 +1,29 @@
-Movie App
-The Movie App is a web application that allows users to explore and manage movies. Users can search for movies, sort them, and manage their personalized watchlist. The app provides detailed information about each movie, including the poster, overview, release date, and ratings.
+# Movie App
 
-Features
-Movie Search: Users can search for movies by title using the search bar.
-Sorting Options: Users can sort movies by popularity or release date to organize the movie list.
-Watchlist: Users can add movies to a watchlist and remove them as desired. The watchlist is saved in local storage to persist across sessions.
-Detailed Movie Information: Each movie has a detailed view showing the poster, description, release date, ratings, and vote count.
+The Movie App is a web-based application designed to help users explore and manage movies efficiently. With this app, users can search for movies, sort them according to their preferences, and maintain a personalized watchlist. The app provides comprehensive details about each movie, including the poster, overview, release date, and ratings.
 
-How to Run the Application
-Clone the repository or download the project files to your local machine.
-Open the project folder and locate the index.html file.
-Open the index.html file in a web browser to start using the app.
+## Features
 
-Usage
-Search for Movies: Type movie titles into the search bar and see live results.
-Sort Movies: Use the dropdown menu to sort movies by popularity or release date.
-Add or Remove from Watchlist: Click on a movie to see details and add it to your watchlist. If it's already in the watchlist, you can remove it.
-The app stores your watchlist in the browser's local storage, so it remains available even when you close and reopen the app.
+- Movie Search: Easily search for movies by entering a title in the search bar.
+- Sorting Options: Organize movies by popularity or release date using sorting options.
+- Watchlist Management: Add and remove movies from a personalized watchlist, which is stored in local storage to ensure persistence across sessions.
+- Detailed Movie Information: View detailed information for each movie, including the poster, description, release date, ratings, and vote count.
 
-Additional Information
-The application is built with HTML, CSS, and JavaScript.
-Local storage is used to persist the user's watchlist across sessions.
+## How to Run the Application
+
+1. Clone or Download: Clone the repository or download the project files to your local machine.
+2. Locate File: Navigate to the project folder and locate the index.html file.
+3. Open in Browser: Open the index.html file in a web browser to start using the app.
+
+## Usage
+
+- Search for Movies: Enter movie titles into the search bar to view live results.
+- Sort Movies: Use the dropdown menu to sort movies by popularity or release date for better organization.
+- Manage Watchlist: Click on a movie to view its details and add it to your watchlist. If the movie is already added, you can remove it from the watchlist.
+
+The app uses the browser's local storage to keep your watchlist saved, making it accessible even after you close and reopen the app.
+
+## Additional Information
+
+- The application is built using HTML, CSS, and JavaScript.
+- It leverages local storage to ensure your watchlist is persistent across different sessions.
